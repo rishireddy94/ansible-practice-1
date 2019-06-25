@@ -1,0 +1,8 @@
+- hosts: all
+  become: true
+  tasks: 
+    - name: install jenkins
+      service:
+        name: jenkins
+        state: started
+
